@@ -1,0 +1,5 @@
+numpy==1.23.5
+pandas==1.5.2
+PyAutoGUI==0.9.53
+pynput==1.7.6
+selenium==4.8.3
