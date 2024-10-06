@@ -144,22 +144,30 @@ def get_link_name(domain,index):
 
     
         time.sleep(3)
+        py.hotkey("ctrl","enter")
+        time.sleep(6)
 
         py.hotkey(keyboard,"f")
         py.typewrite("do not sell", interval = 0.15 )
         screenshot = py.screenshot()
+       
 
         # Save the screenshot to a file
         screenshot.save(screenshots_folder  + "step1.png")
         time.sleep(3)
+        py.hotkey("ctrl","enter")
+        time.sleep(6)
 
         py.hotkey(keyboard,"f")
         py.typewrite("privacy choice", interval = 0.15 )
         screenshot = py.screenshot()
+        
 
         # Save the screenshot to a file
         screenshot.save(screenshots_folder  + "step2.png")
         time.sleep(3)
+        py.hotkey("ctrl","enter")
+        time.sleep(6)
 
         py.hotkey(keyboard,"f")
         py.typewrite("opt out", interval = 0.15 )
@@ -168,7 +176,8 @@ def get_link_name(domain,index):
         # Save the screenshot to a file
         screenshot.save(screenshots_folder  + "step3.png")
         time.sleep(3)
-
+        py.hotkey("ctrl","enter")
+        time.sleep(6)
 
         py.hotkey(keyboard,"f")
         py.typewrite("do not share", interval = 0.15 )
@@ -176,7 +185,8 @@ def get_link_name(domain,index):
 
         # Save the screenshot to a file
         screenshot.save(screenshots_folder  + "step4.png")
-
+        py.hotkey("ctrl","enter")
+        time.sleep(6)
 
     # search through the page source to find the text of opt-out link
         elements = ["a", "button", "span"]
